@@ -1,0 +1,10 @@
+<div>
+    <h2>Add Employee</h2>
+    <form (submit)="saveEmployee()">
+      <input type="text" placeholder="Username" [(ngModel)]="username" required>
+      <input type="text" placeholder="First Name" [(ngModel)]="firstName" required>
+      <button type="submit">Save</button>
+      <button type="button" (click)="cancel()">Cancel</button>
+    </form>
+  </div>
+  
